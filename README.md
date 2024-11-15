@@ -144,6 +144,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to reach out:
 
 - **GitHub**: [abram-qureshi](https://github.com/abram-qureshi)
-- **Email**: your-email@example.com
+- **Email**: 2023tm93737@wilp.bits-pilani.ac.in
+
 
 Happy sharing! 📚✨
