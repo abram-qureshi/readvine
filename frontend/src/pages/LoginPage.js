@@ -25,7 +25,6 @@ const LoginPage = () => {
 
       console.log('Login response data:', response.data);
 
-      // If access and refresh tokens are provided in response, store them in localStorage
       if (response.data.access && response.data.refresh) {
         // Store tokens and user info in localStorage
         localStorage.setItem('access_token', response.data.access);
@@ -38,13 +37,15 @@ const LoginPage = () => {
         setUserId(response.data.user_id);
         setUsername(response.data.username);
 
+        // Set a session flag to trigger a refresh on the home page
+        sessionStorage.setItem('hasRefreshed', 'false');
+
         console.info('Login successful, redirecting to home page...');
         navigate('/', { replace: true }); // Navigate to home page after login
       } else {
         console.error('Access or refresh token not found in response.');
       }
     } catch (err) {
-      // Detailed error handling
       if (err.response) {
         console.error('Error response from server:', err.response.data);
       } else if (err.request) {

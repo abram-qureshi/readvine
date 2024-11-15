@@ -8,13 +8,13 @@ export const AuthProvider = ({ children }) => {
   const [userId, setUserId] = useState(null);
   const [username, setUsername] = useState(null);
 
+  // Synchronize state with local storage values
   useEffect(() => {
-    // Check if user is logged in when the app starts
-    const accessToken = localStorage.getItem('access_token');
+    const token = localStorage.getItem('access_token');
     const savedUserId = localStorage.getItem('user_id');
     const savedUsername = localStorage.getItem('username');
 
-    if (accessToken && savedUserId && savedUsername) {
+    if (token && savedUserId && savedUsername) {
       setIsLoggedIn(true);
       setUserId(savedUserId);
       setUsername(savedUsername);
@@ -23,6 +23,28 @@ export const AuthProvider = ({ children }) => {
       setUserId(null);
       setUsername(null);
     }
+  }, []);
+
+  // New Effect: Watch for changes to localStorage and update state accordingly
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const token = localStorage.getItem('access_token');
+      const savedUserId = localStorage.getItem('user_id');
+      const savedUsername = localStorage.getItem('username');
+
+      if (token && savedUserId && savedUsername) {
+        setIsLoggedIn(true);
+        setUserId(savedUserId);
+        setUsername(savedUsername);
+      } else {
+        setIsLoggedIn(false);
+        setUserId(null);
+        setUsername(null);
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
   return (
