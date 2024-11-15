@@ -69,8 +69,8 @@ EMAIL_HOST = 'smtp.example.com'  # Your email provider's SMTP server
 EMAIL_PORT = 587  # Usually 587 for TLS or 465 for SSL
 EMAIL_USE_TLS = True  # Enable TLS
 EMAIL_USE_SSL = False  # Set this to True if you are using SSL (note: don't use both TLS and SSL)
-EMAIL_HOST_USER = 'djangotesting2025@gmail.com'  # Your email address
-EMAIL_HOST_PASSWORD = 'djangotesting@123'  # Your email password
+EMAIL_HOST_USER = 'testing@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'testing'  # Your email password
 
 # DEFAULT_FROM_EMAIL = 'djangotesting2025@gmail.com'
 
