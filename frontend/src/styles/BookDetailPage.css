@@ -1,0 +1,119 @@
+/* src/styles/BookDetailPage.css */
+
+.book-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.book-detail-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-detail-header {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book-detail-image {
+  max-width: 200px;
+  max-height: 300px;
+  object-fit: contain; /* Prevent image stretching */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.book-detail-info {
+  flex: 1;
+}
+
+.book-title {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.book-detail-info p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.book-detail-info strong {
+  color: #333;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 15px 5px 0 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.book-edit-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.book-detail-info h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #007bff;
+}

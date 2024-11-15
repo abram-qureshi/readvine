@@ -1,0 +1,76 @@
+/* src/styles/LoginPage.css & src/styles/RegisterPage.css */
+
+.login-page, .register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../assets/login-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-form-container, .register-form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2, .register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form label, .register-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.login-form input, .register-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  padding: 12px;
+  background: linear-gradient(90deg, #4caf50, #66bb6a);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #66bb6a, #4caf50);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* LoginPage.css */
+
+.forgot-password-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.forgot-password-link a {
+  color: #007bff; /* Customize the link color to match your theme */
+  text-decoration: none;
+}
+
+.forgot-password-link a:hover {
+  text-decoration: underline;
+}

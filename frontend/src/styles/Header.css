@@ -1,0 +1,55 @@
+/* src/styles/Header.css */
+.header {
+  position: fixed; /* Makes sure it stays fixed in place */
+  top: 0px; /* Adjusts the header to align perfectly at the top */
+  left: 0px; /* Aligns the header perfectly to the left */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9); /* Darker background for clarity */
+  border-bottom-right-radius: 15px; /* Gives the box a subtle rounded corner */
+  color: white;
+  z-index: 1000; /* Makes sure the header stays above all other content */
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Ensures links are aligned properly */
+}
+
+.nav-link {
+  margin: 10px 0; /* Provides space between each link */
+}
+
+.nav-link a {
+  color: #ffffff; /* Sets a clearer color for links */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-link a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+.join-button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the button */
+  margin-top: 20px; /* Adds space above the button */
+}
+
+.join-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #218838;
+}

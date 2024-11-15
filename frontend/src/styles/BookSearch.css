@@ -1,0 +1,176 @@
+.search-books-container {
+  width: 100vw; /* Full viewport width */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margins */
+  padding: 50px 20px; /* Adjust padding to center the inner content */
+  background-image: url('../assets/search-background.jpg'); /* Use the desired background image */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; /* Use flexbox for content centering */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items at the start vertically */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+}
+
+.search-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for readability */
+  border-radius: 10px;
+}
+
+.search-input, .search-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  min-width: 150px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.search-button-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.results-container {
+  margin-top: 20px;
+  width: 90%; /* Limit width of the results for better alignment */
+}
+
+.results-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center align the result cards */
+}
+
+.result-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease; /* Adds a subtle animation for interaction */
+}
+
+.result-item:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover for a more dynamic effect */
+}
+
+.result-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.result-info {
+  text-align: center;
+}
+
+.detail-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.no-results-message {
+  text-align: center;
+  color: #6c757d;
+}
+
+/* Load More Button Styling */
+.load-more-button {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increase padding for better visibility */
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px; /* Increased border-radius for a more rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for background color and button animation */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center; /* Center text inside the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for more emphasis */
+}
+
+.load-more-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect when hovering */
+}
+
+.load-more-button:disabled {
+  background-color: #dcdcdc; /* Light gray when disabled */
+  color: #8a8a8a; /* Gray color for text when disabled */
+  cursor: not-allowed;
+}
+
+
+/* Next Button Styling */
+.next-button {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Increase padding for better visibility */
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px; /* Increased border-radius for a more rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for background color and button animation */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center; /* Center text inside the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for more emphasis */
+}
+
+.next-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect when hovering */
+}
+
+.next-button:disabled {
+  background-color: #dcdcdc; /* Light gray when disabled */
+  color: #8a8a8a; /* Gray color for text when disabled */
+  cursor: not-allowed;
+}

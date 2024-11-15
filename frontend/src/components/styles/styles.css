@@ -1,0 +1,17 @@
+/* styles.css */
+.container {
+    margin-top: 50px;  /* Add margin to the top of the container */
+}
+
+.card {
+    border: 1px solid #007bff;  /* Bootstrap primary color */
+    border-radius: 10px;  /* Rounded corners */
+}
+
+h2 {
+    color: #007bff;  /* Bootstrap primary color */
+}
+
+.alert {
+    margin-top: 10px;  /* Space above alert messages */
+}

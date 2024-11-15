@@ -1,0 +1,24 @@
+/* src/styles/BooksPage.css */
+.books-page {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination-controls {
+  margin-top: 20px;
+}
+
+.book-list {
+  width: 80%;
+  max-width: 800px;
+}
+
+.book-item {
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

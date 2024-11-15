@@ -1,0 +1,304 @@
+/* Add background image for the profile page */
+body.profile-page-body {
+  background-image: url('../assets/profile-background.jpg'); /* Change this path to the correct image location */
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed during scrolling */
+  background-repeat: no-repeat; /* Prevents tiling of the background */
+}
+
+/* General styling for the Profile Page */
+.profile-page {
+  padding: 20px;
+  max-width: 1000px; /* Adjusted to fit content well */
+  margin: 0 auto;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Styling for the profile header section */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+/* Styling for the profile details container */
+.profile-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  width: 150px;
+  align-self: flex-start;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Styling for My Listings section */
+.my-books-section {
+  margin-top: 30px;
+}
+
+.my-books-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Styling for the add book button below listings */
+.add-book-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-book-button-container .btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-book-button-container .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the horizontal scroll book list */
+.book-list-scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.book-list-horizontal-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.book-list-horizontal {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px; /* Space between each book card */
+}
+
+/* Styling for individual book cards */
+.book-card {
+  flex: 0 0 220px; /* Make sure only 3 cards are visible at once */
+  height: 350px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.book-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.book-card-overlay {
+  padding: 10px;
+}
+
+.book-card-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.book-card-author {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.view-details-button {
+  padding: 10px;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.view-details-button:hover {
+  background-color: #0056b3;
+}
+
+/* Scroll button styling */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button-left {
+  left: -10px; /* Adjust to keep a gap from the list */
+}
+
+.scroll-button-right {
+  right: -10px; /* Adjust to keep a gap from the list */
+}
+
+.scroll-button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure the page can scroll to make all content visible */
+body {
+  overflow-y: auto;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+/* src/styles/ProfilePage.css */
+
+.profile-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.search-button {
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e0e0e0;
+}
+
+.search-button .search-icon {
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
